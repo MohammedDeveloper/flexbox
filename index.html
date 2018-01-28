@@ -1,0 +1,153 @@
+<style>
+    @media(min-width: 767px) {
+        .container-1 {
+            display: flex;
+            /*
+            align-items: flex-start;
+            align-items: flex-start;
+            align-items: flex-end;
+            align-items: stretch; 
+
+            flex-direction: row;
+            flex-direction: row-reverse;
+            flex-direction: column-reverse;
+            flex-direction: column;
+            */
+        }
+
+        .container-2 {
+            display: flex;
+
+            /*
+            justify-content: flex-start;
+            justify-content: flex-end;
+            justify-content: center;
+            justify-content: space-between;
+            justify-content: space-around;
+            */
+            justify-content: space-between;
+        }
+    }
+
+    .container-3 {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+
+    .container-1 div,
+    .container-2 div,
+    .container-3 div {
+        padding: 5px;
+        border: 1px solid rgb(158, 151, 151);
+    }
+
+    .box-1 {
+        flex: 2;
+        order: 2;
+    }
+
+    .box-2 {
+        flex: 1;
+        order: 3;
+    }
+
+    .box-3 {
+        flex: 1;
+        order: 1;
+    }
+
+    .container-2 .box {
+        flex-basis: 30%;
+    }
+
+    .container-3 .box {
+        flex-basis: 16%;
+    }
+</style>
+
+<!-- Flex Basics -->
+<h1>flex (basics)</h1>
+<div class="container-1">
+    <div class="box-1">
+        <h3>Box 1</h3>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sequi fugiat reprehenderit, rerum ex amet nostrum excepturi
+            corporis? Tempore, quia quis?</p>
+    </div>
+    <div class="box-2">
+        <h3>Box 2</h3>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sequi fugiat reprehenderit</p>
+    </div>
+    <div class="box-3">
+        <h3>Box 3</h3>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sequi fugiat reprehenderit, rerum ex amet nostrum excepturi</p>
+    </div>
+</div>
+
+<br />
+
+<!-- Flex with width feature -->
+<h1>flex-basis (width feature)</h1>
+<div class="container-2">
+    <div class="box">
+        <h3>Box 4</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere voluptatum hic libero, quod possimus debitis qui
+            accusamus id nostrum consectetur dignissimos, amet nihil obcaecati veritatis, inventore sunt doloribus facilis.
+            Expedita?
+        </p>
+    </div>
+    <div class="box">
+        <h3>Box 5</h3>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Alias suscipit non accusamus rerum, obcaecati quae quia
+            nemo deserunt beatae sequi amet impedit eius magni ullam sapiente similique. Dolor, placeat officiis. Dignissimos
+            voluptatum quo dicta.</p>
+    </div>
+    <div class="box">
+        <h3>Box 6</h3>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fuga suscipit totam numquam laborum nulla magni explicabo
+            iusto corporis ipsam sed! Saepe dolor deserunt, facere eveniet ullam consequatur aut.</p>
+    </div>
+</div>
+
+<br />
+
+<!-- Flex with wrap feature -->
+<h1>flex-wrap (wrap feature)</h1>
+<div class="container-3">
+    <div class="box">
+        <h3>Box 7</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere voluptatum hic libero, quod possimus debitis qui
+            accusamus id nostrum consectetur dignissimos, amet nihil obcaecati veritatis, inventore sunt doloribus facilis.
+            Expedita?
+        </p>
+    </div>
+    <div class="box">
+        <h3>Box 8</h3>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Alias suscipit non accusamus rerum, obcaecati quae quia
+            nemo deserunt beatae sequi amet impedit eius magni ullam sapiente similique. Dolor, placeat officiis. Dignissimos
+            voluptatum quo dicta.</p>
+    </div>
+    <div class="box">
+        <h3>Box 9</h3>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fuga suscipit totam numquam laborum nulla magni explicabo
+            iusto corporis ipsam sed! Saepe dolor deserunt, facere eveniet ullam consequatur aut.</p>
+    </div>
+    <div class="box">
+        <h3>Box 10</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere voluptatum hic libero, quod possimus debitis qui
+            accusamus id nostrum consectetur dignissimos, amet nihil obcaecati veritatis, inventore sunt doloribus facilis.
+            Expedita?
+        </p>
+    </div>
+    <div class="box">
+        <h3>Box 11</h3>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Alias suscipit non accusamus rerum, obcaecati quae quia
+            nemo deserunt beatae sequi amet impedit eius magni ullam sapiente similique. Dolor, placeat officiis. Dignissimos
+            voluptatum quo dicta.</p>
+    </div>
+    <div class="box">
+        <h3>Box 12</h3>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fuga suscipit totam numquam laborum nulla magni explicabo
+            iusto corporis ipsam sed! Saepe dolor deserunt, facere eveniet ullam consequatur aut.</p>
+    </div>
+</div>
